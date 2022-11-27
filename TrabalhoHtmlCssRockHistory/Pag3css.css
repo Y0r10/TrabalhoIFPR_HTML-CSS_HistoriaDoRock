@@ -1,0 +1,153 @@
+body {
+    font-style: italic;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+h1{
+    margin: 2px;
+}
+h4{
+    font-size: 20px;
+    color: antiquewhite;
+    padding: 15px;
+    margin: auto 0%;
+}
+h3{
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0% auto;
+    font-size: 25px;
+    padding-left: 2%;
+    padding-right:2%;
+    padding-top: 1%;
+    text-align: center;
+
+}
+.titulo{
+    padding-left: 20%;
+    padding-top: 1%;
+    font-size: 40px;
+    color: brown;
+}
+.texto{
+    font-size: 20px;
+    padding: 3%;
+    padding-top:1%;
+    padding-bottom:1%;
+    margin: 0% auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100px 700px 100px 610px 100px;
+    grid-template-areas: "divCabecalho divCabecalho"
+                        "divMenu divConteudo"
+                        "divMenu divConteudo"
+                        "instrumentos divConteudo"
+                        "divRodape divRodape";
+}
+
+#cabecalho {
+    background-color:black;
+    grid-area: divCabecalho;
+}
+
+#menu {
+    background-color: rgb(120, 120, 120);
+    grid-area: divMenu;
+}
+#instrumentos {
+    background-color: rgb(44, 44, 44);
+    grid-area: instrumentos;
+}
+.elvisDancin{
+    height: 500px;
+    width: 402px;
+    padding-left: 10%;
+}
+#conteudo {
+    background-color: rgb(85, 0, 0);
+    padding-left: 10px;
+    padding-right: 10px;
+    grid-area: divConteudo;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 150px 250px 250px 250px 250px 250px;
+    grid-template-areas: "divTituloCont divTituloCont divTituloCont"
+                        "divFotoBeat divDescBeat divDescBeatFalsa"
+                        "divDescRollFalsa divDescRoll divFotoRoll"
+                        "divFotoLed divDescLed divDescLedFalsa"
+                        "divDescFloydFalsa divDescFloyd divFotoFloyd"
+                        "divFotoSeixas divDescSeixas divDescSeixasFalsa";
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+#divTituloCont{
+    grid-area: divTituloCont;
+}
+#divFotoBeat{
+    grid-area: divFotoBeat;
+}
+
+#divDescBeat{
+    grid-area: divDescBeat;
+    border: orange 5px dotted;
+    margin: 5px;
+    margin-right: 40px;
+}
+#divFotoRoll{
+    grid-area: divFotoRoll;
+}
+#divDescRoll{
+    grid-area: divDescRoll;
+    border: orange 5px dotted;
+    margin: 5px;
+    margin-left: 40px;
+}
+#divFotoLed{
+    grid-area: divFotoLed;
+}
+#divDescLed{
+    grid-area: divDescLed;
+    border: orange 5px dotted;
+    margin: 5px;
+    margin-right: 40px;
+}
+#divFotoFloyd{
+    grid-area: divFotoFloyd;
+}
+#divDescFloyd{
+    grid-area: divDescFloyd;
+    border: orange 5px dotted;
+    margin: 5px;
+    margin-left: 40px;
+}
+#divFotoSeixas{
+    grid-area: divFotoSeixas;
+}
+#divDescSeixas{
+    grid-area: divDescSeixas;
+    border: orange 5px dotted;
+    margin: 5px;
+    margin-right: 40px;
+}
+#ozzyMorcego{
+    width: 250px;
+    height: 300px;
+    margin-right: 50px;
+}
+#angusDevil{
+    width: 150px;
+    height: 300px;
+    margin-left: 50px;
+}
+#divRodape{
+    grid-area: divRodape;
+    background-color:indianred ;
+}

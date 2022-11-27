@@ -1,0 +1,109 @@
+body {
+    font-style: italic;
+    color: rgb(80, 78, 78);
+    margin: 0;
+    background-color: blue;
+}
+
+h1 {
+    margin: 0%;
+    padding-left: 30%;
+    padding-top: 1%;
+    font-size: 45px;
+    color: rgb(255, 0, 0);
+}
+h4{
+    font-size: 20px;
+    color: antiquewhite;
+    padding: 15px;
+    margin: auto 0%;
+}
+a{
+    text-decoration: none white;
+
+}
+p{
+    font-size: 18px;
+    color: black;
+}
+h3{
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0% auto;
+    font-size: 25px;
+    padding-left: 2%;
+    padding-right:2%;
+    padding-top: 1%;
+    text-align: center;
+
+}
+.h3Artistas{
+    color:black;  
+}
+.pArtistas{
+    margin-left: 10px;
+}
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    grid-template-rows: 110px 350px 400px 100px;
+    grid-template-areas: "divCabecalho divCabecalho divCabecalho"
+                        "divFormulario divConteudo divMenu "
+                        "divArtistas divConteudo divFontes"
+                        "divRodape divRodape divRodape";
+}
+
+#cabecalho {
+    background-color: rgb(53, 53, 53);
+    grid-area: divCabecalho;
+}
+
+#menu {
+    background-color: rgb(0,40,60);
+    grid-area: divMenu;
+}
+
+#conteudo {
+    background-color: rgb(67, 84, 126);
+    grid-area: divConteudo;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 270px 470px;
+    grid-template-areas:   "divTextoCont"
+                           "divFotoCont" ;
+}
+#divTextoCont{
+    grid-area: divTextoCont;
+}
+#divFotoCont{
+    grid-area: divFotoCont;
+}
+
+#rodape {
+    background-color: rgb(0, 100, 200);
+    grid-area: divRodape;
+}
+#formulario{
+    background-color:darkslategrey;
+    grid-area: divFormulario;
+}
+#divArtistas{
+    background-color: aqua;
+    grid-area: divArtistas;
+
+}
+#divFontes{
+    background-color: darkcyan;
+    grid-area: divFontes;
+
+}
+label{
+    color: aliceblue;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
